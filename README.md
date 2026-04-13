@@ -61,7 +61,21 @@ ESP32 dev board S1 mode
  
 7. **S10 portt**:
    - set rx tc in the esp32 webinterface
-   - the original board uses fets to drive the S10 port ( maybe its inverted ?)  
+   - the original board uses fets to drive the S10 port ( maybe its inverted ?)
+   - The physical interface is basic serial data, low is 0, high is 1. However the Daikin appears to operate with a 5V internal pull up on Tx and Rx lines, and a pull down. The Faikout uses a FET each way, which means internally the lines are inverted.
+   - so use
+   - Use a simple MOSFET level shifter:
+   - BSS138 (very common)👉 This matches what RevK boards do
+   - 2x pull-up resistors (e.g. 10k)
+
+
+
+
+
+
+The S403 port is a non-isolated S21 port, i.e. it is at MAINS POWER levels, and dangerous. Any connected device, such as a Faikout, needs to be inside the case.
+
+The S21 port pin out is 1:1 the same as the Faikout pin out :-
    
 ## 3. Troubleshooting
 
