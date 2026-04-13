@@ -59,8 +59,10 @@ ESP32 dev board S1 mode
 6. **Home Assistant**:
    - use the official integration Daikin
  
-  
-   - 
+7. **S10 portt**:
+   - set rx tc in the esp32 webinterface
+   - the original board uses fets to drive the S10 port ( maybe its inverted ?)  
+   
 ## 3. Troubleshooting
 
 - **Wrong COM port?** Device Manager → Ports (COM & LPT)
