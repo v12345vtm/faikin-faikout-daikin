@@ -58,7 +58,7 @@ ESP32 dev board S1 mode
 
 6. **Home Assistant**:
    - use the official integration Daikin for the faikin-faikout
-   - or esphome alternative = https://github.com/joshbenner/esphome-daikin-s21 where the mosfets will not be needed
+   - or esphome alternative = https://github.com/joshbenner/esphome-daikin-s21 where the mosfets will not be needed but has some less features
  
 7. **S10 portt**:
    - set rx tc in the esp32 webinterface
