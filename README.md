@@ -55,6 +55,12 @@ ESP32 dev board S1 mode
    0x10000 Faikout-S1.bin
    ```
 
+
+6. **Home Assistant**:
+   - use the official integration Daikin
+ 
+  
+   - 
 ## 3. Troubleshooting
 
 - **Wrong COM port?** Device Manager → Ports (COM & LPT)
